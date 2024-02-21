@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <body>
+        <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+        <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+    
+        <!-- <script type="module" src="dimensions.js"></script> -->
+        <script type="module" src="acquisitions.js"></script>
+      </body>
+
+
+
+<div style="width:100dvh; height:50dvh;"> <!-- feel free to change the height and allignment based on your needs -->
+    <canvas id="myChart"></canvas>
+ 
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['TCD', 'UCD', 'UCC', 'NUIG', 'DCU','NUIM', 'MU','UL','TUD', 'RCSI','AIT','CIT','DIAS','DkIT','IADT','GMIT','ITB','IT Carlow', 'IT Sligo'], 
+        datasets: [{
+          label: '# of sets won',
+          data: [8, 16, 24 , 32, 40, 8, 16, 24, 32, 40, 8, 16, 24, 32, 40, 8, 16, 24, 32, 40],
+          borderWidth: 1,
+          backgroundColor: '#90EE90'
+
+        }]
+      },
+      options: {
+        scales: { 
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    
+  </script>
+  <div style="width:100dvh; height:50dvh;">  <!-- feel free to change the height and allignment based on your needs -->
+
+    <canvas id="PiChart"></canvas>
+  </div>
+ 
+    <script>
+        const ctr = document.getElementById('PiChart');
+      
+        new Chart(ctr, {
+          type: 'bar',
+          data: {
+            labels: ['TCD', 'UCD', 'UCC', 'NUIG', 'DCU','NUIM', 'MU','UL','TUD', 'RCSI','AIT','CIT','DIAS','DkIT','IADT','GMIT','ITB','IT Carlow', 'IT Sligo'], 
+            datasets: [{
+              label: '# of sets lost',
+              data: [8, 16, 24 , 32, 40, 8, 16, 24, 32, 40, 8, 16, 24, 32, 40, 8, 16, 24, 32, 40],
+              borderWidth: 1,
+              backgroundColor: '#FF7F7F',
+            }]
+          },
+          options: {
+            scales: { 
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        </script>
+
+</script>
+<div style="width:100dvh; height:50dvh;">
+  <canvas id="Games Played:"></canvas>
+</div>
+
+  <script>
+      const cts = document.getElementById('Games Played:');
+    
+      new Chart(cts, {
+        type: 'bar',
+        data: {
+          labels: ['TCD', 'UCD', 'UCC', 'NUIG', 'DCU','NUIM', 'MU','UL','TUD', 'RCSI','AIT','CIT','DIAS','DkIT','IADT','GMIT','ITB','IT Carlow', 'IT Sligo'], 
+          datasets: [{
+            label: 'Games played: ',
+            data: [2, 4, 6 , 8, 10, 12 ,14,16,18,20,22,24,26,28,30,32,34,36,38,40],
+            borderWidth: 0.5,
+            backgroundColor: '#FFC000',
+
+
+
+          }]
+        },
+        options: {
+          scales: { 
+            y: {
+              beginAtZero: true
+            }
+          } 
+        }
+      });
+      </script>
+
+<script>
+    const ctv = document.getElementById('Games Played:');
+  
+    new Chart(ctv, {
+      type: 'bar',
+      data: {
+        labels: ['TCD', 'UCD', 'UCC', 'NUIG', 'DCU','NUIM', 'MU','UL','TUD', 'RCSI','AIT','CIT','DIAS','DkIT','IADT','GMIT','ITB','IT Carlow', 'IT Sligo'], 
+        datasets: [{
+          label: 'Games played: ',
+          data: [2, 4, 6 , 8, 10, 12 ,14,16,18,20,22,24,26,28,30,32,34,36,38,40],
+          borderWidth: 0.5,
+          backgroundColor: '#FFC000',
+
+
+
+        }]
+      },
+      options: {
+        scales: { 
+          y: {
+            beginAtZero: true
+          }
+        } 
+      }
+    });
+    </script>
+
+
+    <div style="width:100dvh; height:100dvh;"> <!-- feel free to change the height and allignment based on your needs -->
+        <canvas id="radarChart"></canvas>
+     
+    </div>
+    <script>
+        const ctxx = document.getElementById('radarChart');
+
+        
+        
+        new Chart(ctxx, {
+          type: 'radar',
+          data: {
+            labels: ['Winrate','Sets Won %', 'Sets Won %,', 'Tie-breaks won %', 'Ace %'], 
+            datasets: [{
+              label: 'Player Statistics: ',
+              data: [100,80,60,40,60],
+            
+
+              backgroundColor: 'rgba(82, 177, 255, 0.2)',
+              borderColor: '#52B1FF',
+              pointBackgroundColor: 'rgb(100, 99, 132)',
+              pointBorderColor: '#52B1FF',
+              pointHoverBackgroundColor: '#fff',
+              pointHoverBorderColor: 'rgb(255, 99, 132)'    
+    
+    
+            }]
+          },
+          options :{
+    scales: {
+        r: {
+            angleLines: {
+                display: true
+            },
+            suggestedMin: 0,
+            suggestedMax: 100
+        }
+    }
+          }
+        });
+    
+        </script>
+  
