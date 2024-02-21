@@ -1,4 +1,4 @@
-# 2024-Patch-x-ISE-Hackathon
+# 2024 Patch x ISE Hackathon
 
 - Led a team of 5 members in the development of a startup project for the Irish University Tennis League (IUTL) during the hackathon.
 
