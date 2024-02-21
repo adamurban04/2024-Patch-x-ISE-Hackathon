@@ -1,5 +1,4 @@
 # 2024-Patch-x-ISE-Hackathon
-IUTL - Irish University Tennis League organisation startup project.
 
 - Led a team of 5 members in the development of a startup project for the Irish University Tennis League (IUTL) during the hackathon.
 
